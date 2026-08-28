@@ -1,0 +1,354 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #081b29;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Header & Nav */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00eeff;
+}
+
+/* Global Section Styling */
+section {
+    min-height: 100vh;
+    padding: 10rem 10% 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+.heading span {
+    color: #00eeff;
+}
+
+/* Buttons & Text Colors */
+.text-color {
+    color: #00eeff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #00eeff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #00eeff;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #00eeff;
+}
+
+/* Profile Image Glow */
+.profile-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00eeff;
+    box-shadow: 0 0 25px #00eeff, 0 0 50px #ff00ff;
+}
+
+/* 1. Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00eeff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00eeff;
+    margin: 30px 15px 30px 0;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background: #00eeff;
+    color: #081b29;
+    box-shadow: 0 0 20px #00eeff;
+}
+
+/* 2. About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: #112e42;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    line-height: 1.5;
+}
+
+/* 3. Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.skills-box {
+    background: #112e42;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid #081b29;
+    transition: 0.5s ease;
+}
+
+.skills-box:hover {
+    border-color: #00eeff;
+    transform: translateY(-5px);
+}
+
+.skills-box i {
+    font-size: 5rem;
+    color: #00eeff;
+    margin-bottom: 1rem;
+}
+
+.skills-box h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* 4. Portfolio Projects Section */
+.portfolio {
+    background: #112e42;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+ .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #081b29;
+    overflow: hidden;
+    display: flex;
+    background: #1f242d;
+    min-height: 250px; /* Card ki fixed height */
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: 0.5s ease;
+}
+
+.portfolio-box:hover {
+    border-color: #0ef;
+    transform: translateY(-5px);
+}
+
+.portfolio-layer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 10px;
+}
+
+.portfolio-layer .project-icon {
+    font-size: 40px;
+    color: #0ef;
+}
+
+.portfolio-layer h4 {
+    font-size: 22px;
+    color: #fff;
+}
+
+.portfolio-layer p {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.portfolio-layer .click-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #0ef;
+    color: #1f242d;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+    color: #081b29;
+}
+
+.portfolio-layer p {
+    font-size: 1.4rem;
+    margin: .3rem 0 1rem;
+    color: #081b29;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: #081b29;
+}
+
+/* 5. Contact Section */
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background: #112e42;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    background: #081b29;
+}
+
+.footer-text p {
+    font-size: 1.4rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: #00eeff;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a i {
+    font-size: 2rem;
+    color: #081b29;
+}
