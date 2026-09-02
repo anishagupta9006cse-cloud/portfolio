@@ -198,6 +198,186 @@ section {
     margin-bottom: 1rem;
 }
 
+/* Certifications Section Styling */
+.certificates {
+    padding: 6rem 9% 6rem;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 1.6rem;
+    color: #a0aec0;
+    margin-bottom: 4rem;
+}
+
+.cert-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: #0d1b2a;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-3px);
+}
+
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    background: #1b263b;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+    color: #00b4d8;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.cert-info {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.cert-issuer {
+    font-size: 1.2rem;
+    color: #8d99ae;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.cert-info h3 {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cert-info p {
+    font-size: 1.3rem;
+    color: #a0aec0;
+}
+
+.cert-link {
+    font-size: 1.4rem;
+    color: #00b4d8;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
+/* Education Section Styling */
+.education {
+    padding: 6rem 9% 6rem;
+    text-align: center;
+}
+
+.sub-heading-top {
+    font-size: 1.4rem;
+    color: #00b4d8;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.edu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 700px;
+    margin: 4rem auto 0;
+}
+
+.edu-card {
+    background: #0d1b2a;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.edu-icon {
+    font-size: 3.5rem;
+    color: #00b4d8;
+    margin-bottom: 1.5rem;
+}
+
+.edu-year {
+    font-size: 1.3rem;
+    color: #8d99ae;
+    margin-bottom: 0.5rem;
+}
+
+.edu-card h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.edu-card p {
+    font-size: 1.4rem;
+    color: #a0aec0;
+    margin-bottom: 2rem;
+}
+
+.edu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: #00b4d8;
+    color: #0d1b2a;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.edu-btn:hover {
+    background: #90e0ef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .cert-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .cert-icon {
+        margin-right: 0;
+    }
+    .cert-info {
+        text-align: center;
+    }
+}
+
 /* 4. Portfolio Projects Section */
 .portfolio {
     background: #112e42;
@@ -216,7 +396,7 @@ section {
     overflow: hidden;
     display: flex;
     background: #1f242d;
-    min-height: 250px; /* Card ki fixed height */
+    min-height: 250px;                                 /* Card ki fixed height */
     text-decoration: none;
     border: 2px solid transparent;
     transition: 0.5s ease;
