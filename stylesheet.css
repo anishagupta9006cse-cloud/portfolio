@@ -532,3 +532,70 @@ section {
     font-size: 2rem;
     color: #081b29;
 }
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================== */
+
+/* Medium Devices: Tablets & Small Laptops (max-width: 991px) */
+@media (max-width: 991px) {
+    .education, .skills {
+        padding: 4rem 4% 4rem;
+    }
+
+    .edu-container {
+        max-width: 90%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile Devices: SmartPhones (max-width: 768px) */
+@media (max-width: 768px) {
+    .sub-heading-top {
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .edu-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .edu-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .edu-card p {
+        font-size: 1.1rem;
+    }
+
+    .edu-btn {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .skills-box {
+        padding: 2rem 1rem;
+    }
+}
+
+/* Extra Small Mobile Devices (max-width: 450px) */
+@media (max-width: 450px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr; /* Mobile par 1 single column layouts */
+    }
+}
