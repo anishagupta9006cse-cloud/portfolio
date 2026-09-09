@@ -537,10 +537,18 @@ section {
    RESPONSIVE MEDIA QUERIES
    ========================================== */
 
-/* Medium Devices: Tablets & Small Laptops (max-width: 991px) */
+ /* Tablet & Medium Screens (max-width: 991px) */
 @media (max-width: 991px) {
+    header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
     .education, .skills {
-        padding: 4rem 4% 4rem;
+        padding: 4rem 4%;
     }
 
     .edu-container {
@@ -553,8 +561,49 @@ section {
     }
 }
 
-/* Mobile Devices: SmartPhones (max-width: 768px) */
+/* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Navbar / Menu Toggle */
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: #1f242d; /* Apne background color ke hisab se change karein */
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    /* Home & About Section Layout Fix */
+    .home, .about {
+        flex-direction: column-reverse; /* Text pehle, photo niche */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .home-img img, .about-img img {
+        width: 70vw; /* Mobile screen par image resize ho jayegi */
+        margin-top: 2rem;
+    }
+
+    /* Headings & Texts */
     .sub-heading-top {
         font-size: 1.2rem;
     }
@@ -591,11 +640,19 @@ section {
 
 /* Extra Small Mobile Devices (max-width: 450px) */
 @media (max-width: 450px) {
+    html {
+        font-size: 55%; /* Overall text scale ho jayega */
+    }
+
     .heading {
         font-size: 2rem;
     }
 
-    .skills-container {
-        grid-template-columns: 1fr; /* Mobile par 1 single column layouts */
+    .skills-container, .cert-container, .edu-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .home-img img, .about-img img {
+        width: 85vw;
     }
 }
